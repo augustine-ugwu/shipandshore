@@ -198,7 +198,7 @@ const DesktopSubNav = ({ label, to, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "blackAlpha.100")}
+      bg={useColorModeValue("white", "gray.800")}
       p={4}
       display={{ md: "none" }}
     >
