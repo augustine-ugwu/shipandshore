@@ -17,6 +17,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   useEffect(() => {
@@ -75,20 +76,24 @@ const Hero = () => {
           </Text>
 
           <HStack spacing={2} py={2}>
-            <Button
-              rightIcon={<ArrowForwardIcon />}
-              colorScheme="teal"
-              variant="solid"
-            >
-              Read More
-            </Button>
-            <Button
-              rightIcon={<EmailIcon />}
-              colorScheme="teal"
-              variant="outline"
-            >
-              Contact Us
-            </Button>
+            <Link to="/about">
+              <Button
+                rightIcon={<ArrowForwardIcon />}
+                colorScheme="teal"
+                variant="solid"
+              >
+                Read More
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                rightIcon={<EmailIcon />}
+                colorScheme="teal"
+                variant="outline"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </HStack>
 
           <HStack spacing={3} className={styles.social} pt={{ base: "3em" }}>

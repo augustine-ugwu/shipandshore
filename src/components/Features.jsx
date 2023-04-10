@@ -21,6 +21,7 @@ import shipping from "../assets/shipping.svg";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Feature = ({ title, text, src, buttontext }) => {
   return (
@@ -49,9 +50,11 @@ const Feature = ({ title, text, src, buttontext }) => {
               <Text>{text}</Text>
             </Stack>
             <CardFooter>
-              <Button position={"absolute"} bottom={10} right={10}>
-                {buttontext}
-              </Button>
+              <Link to="/about">
+                <Button position={"absolute"} bottom={10} right={10}>
+                  {buttontext}
+                </Button>
+              </Link>
             </CardFooter>
           </CardBody>
         </Card>
