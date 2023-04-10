@@ -27,7 +27,7 @@ const Aboutsection5 = () => {
     <>
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
-        m={{ base: "1em", md: 10, lg: 16 }}
+        m={{ base: 1, md: 10, lg: 16 }}
       >
         <Card
           data-aos="fade-up"
@@ -45,7 +45,7 @@ const Aboutsection5 = () => {
           />
 
           <Stack>
-            <CardBody p={{ base: 1, md: 10 }}>
+            <CardBody p={{ base: 2, md: 10 }}>
               <Heading size="lg">Crewing / Crew Management Services</Heading>
               <Text py="2">
                 Presently, we provide crew management services for over 150 crew

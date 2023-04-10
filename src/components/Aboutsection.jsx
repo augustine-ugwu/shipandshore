@@ -23,6 +23,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Aboutsection = () => {
   useEffect(() => {
@@ -75,13 +76,15 @@ const Aboutsection = () => {
             </CardBody>
 
             <CardFooter p={{ base: 1, md: 10 }}>
-              <Button
-                rightIcon={<ArrowForwardIcon />}
-                colorScheme="teal"
-                variant="solid"
-              >
-                Read More About Us
-              </Button>
+              <Link to="/about">
+                <Button
+                  rightIcon={<ArrowForwardIcon />}
+                  colorScheme="teal"
+                  variant="solid"
+                >
+                  Read More About Us
+                </Button>
+              </Link>
             </CardFooter>
           </Stack>
         </Card>

@@ -42,8 +42,8 @@ const About = () => {
       >
         <Box
           borderRadius="lg"
-          m={{ base: 5, md: 16, lg: 10 }}
-          p={{ base: 5, lg: 10 }}
+          m={{ base: 1, md: 16, lg: 10 }}
+          p={{ base: 1, lg: 10 }}
         >
           <Heading
             fontSize={"1.2rem"}

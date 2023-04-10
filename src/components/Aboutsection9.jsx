@@ -27,7 +27,7 @@ const Aboutsection9 = () => {
     <>
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
-        m={{ base: "1em", md: 10, lg: 16 }}
+        m={{ base: 1, md: 10, lg: 16 }}
       >
         <Card
           data-aos="fade-up"
@@ -45,7 +45,7 @@ const Aboutsection9 = () => {
           />
 
           <Stack>
-            <CardBody p={{ base: 1, md: 10 }}>
+            <CardBody p={{ base: 2, md: 10 }}>
               <Heading size="lg">Staff</Heading>
               <Text py="2">
                 We employ in our company over 150 staff, both onshore and

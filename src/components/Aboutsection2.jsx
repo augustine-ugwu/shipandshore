@@ -27,7 +27,7 @@ const Aboutsection2 = () => {
     <>
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
-        m={{ base: "1em", md: 10, lg: 16 }}
+        p={{ base: 1, md: 10, lg: 16 }}
       >
         <Card
           data-aos="fade-up"
@@ -38,7 +38,7 @@ const Aboutsection2 = () => {
           border={"none"}
         >
           <Stack>
-            <CardBody p={{ base: 1, md: 10 }}>
+            <CardBody p={{ base: 2, md: 10 }}>
               <Text>
                 In the early years of the company's operations, it was actively
                 involved in the supply of bunker fuels to vessels calling
