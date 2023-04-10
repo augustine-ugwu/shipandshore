@@ -11,6 +11,7 @@ import {
 import { ArrowForwardIcon, EmailIcon } from "@chakra-ui/icons";
 import React, { useEffect } from "react";
 import BgVideo from "../assets/12013.mp4";
+import thumbnail from "../assets/thumbnail.png";
 import styles from "./index.module.css";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 // importing aos
@@ -25,7 +26,7 @@ const Hero = () => {
   return (
     <>
       <Box className={styles.showcase}>
-        <video src={BgVideo} muted loop autoPlay></video>
+        <video src={BgVideo} muted loop autoPlay poster={thumbnail}></video>
         <Box
           className={styles.text}
           maxW={{ base: "xl", md: "3xl" }}
