@@ -11,7 +11,7 @@ import {
 import { ArrowForwardIcon, EmailIcon } from "@chakra-ui/icons";
 import React, { useEffect } from "react";
 import BgVideo from "../assets/12013.mp4";
-import thumbnail from "../assets/thumbnail.png";
+import thumbnail from "../assets/thumbnail.jpg";
 import styles from "./index.module.css";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 // importing aos
