@@ -33,7 +33,7 @@ const Aboutsection = () => {
     <>
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
-        p={{ base: 0, md: 10, lg: 16 }}
+        m={{ base: "1em", md: 10, lg: 16 }}
       >
         <Card
           data-aos="fade-up"
