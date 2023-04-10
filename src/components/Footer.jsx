@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import {
   Box,
   chakra,
@@ -17,7 +18,13 @@ import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import Logo from "../assets/logo34.png";
 
+// const withouSidebarRoutes = ["/contact"];
+
 const SocialButton = ({ children, label, href }) => {
+  // const { pathname } = useLocation();
+
+  // if (withouSidebarRoutes.some((item) => pathname.includes(item))) return null;
+
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
