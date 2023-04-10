@@ -7,11 +7,6 @@ import {
   Heading,
   Text,
   Button,
-  Image,
-  Icon,
-  IconButton,
-  createIcon,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon, EmailIcon } from "@chakra-ui/icons";
 import React, { useEffect } from "react";
