@@ -33,7 +33,18 @@ const Projects = () => {
           borderRadius="lg"
           m={{ base: 5, md: 16, lg: 10 }}
           p={{ base: 5, lg: 10 }}
-        ></Box>
+        >
+          <Heading
+            fontSize={{
+              base: "lg",
+              md: "2xl",
+            }}
+            textAlign="center"
+            mb={20}
+          >
+            Coming Soon...
+          </Heading>
+        </Box>
       </Flex>
     </>
   );
