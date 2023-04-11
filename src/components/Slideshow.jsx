@@ -1,32 +1,39 @@
-import { Box } from "@chakra-ui/react";
-import React from "react";
-import ImageSlider, { Slide } from "react-auto-image-slider";
-import Img1 from "../assets/1541.jpg";
-import Img2 from "../assets/1542.jpg";
-import Img3 from "../assets/1543.jpg";
-import Img4 from "../assets/1544.jpg";
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-const Slideshow = () => {
-  return (
-    <div>
-      <Box height={"1.8em"} width={"2.8em"}>
-        <ImageSlider effectDelay={500} autoPlayDelay={2000}>
-          <Slide>
-            <img objectfit="contain" alt="shipping vessel" src={Img1} />
-          </Slide>
-          <Slide>
-            <img objectfit="contain" alt="shipping vessel" src={Img2} />
-          </Slide>
-          <Slide>
-            <img objectfit="contain" alt="shipping vessel" src={Img3} />
-          </Slide>
-          <Slide>
-            <img objectfit="contain" alt="shipping vessel" src={Img4} />
-          </Slide>
-        </ImageSlider>
-      </Box>
-    </div>
-  );
-};
-
-export default Slideshow;
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+    return (
+      <div maxW={{ base: "100%", sm: "20em", md: "50em" }}>
+        <h2> Single Item</h2>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}

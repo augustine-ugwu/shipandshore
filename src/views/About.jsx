@@ -46,8 +46,8 @@ const About = () => {
           p={{ base: 1, lg: 10 }}
         >
           <Heading
-            fontSize={"1.2rem"}
-            pl={{ base: 0, md: 20 }}
+            fontSize={{ base: "1rem" }}
+            pl={{ base: 1, md: 20 }}
             fontWeight={600}
             size="lg"
           >

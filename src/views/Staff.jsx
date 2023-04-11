@@ -1,5 +1,6 @@
 import { Flex, useColorModeValue, Box, Heading } from "@chakra-ui/react";
 import React from "react";
+import Staffcomponent from "../components/Teammembers";
 
 const confetti = {
   light: {
@@ -19,7 +20,6 @@ const Staff = () => {
   return (
     <>
       <Flex
-        height={"92vh"}
         bg={useColorModeValue("gray.100", "gray.900")}
         align="center"
         justify="center"
@@ -33,7 +33,9 @@ const Staff = () => {
           borderRadius="lg"
           m={{ base: 5, md: 16, lg: 10 }}
           p={{ base: 5, lg: 10 }}
-        ></Box>
+        >
+          <Staffcomponent />
+        </Box>
       </Flex>
     </>
   );
